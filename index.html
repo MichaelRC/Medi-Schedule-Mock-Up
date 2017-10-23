@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<!-- GENERAL META -->
+	<title>Login - Medi-Schedule</title>
+	<link rel="icon"
+		type="image/png"
+		href="http://medi-schedule.herokuapp.com/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="authors" content="Team Sticky Bits - Delphine Dara, Michael Curnes, and Nan Loyd-Leffingwell" />
+	<meta name="description" content="A full stack application that for shift scheudling in hospitals." />
+	<meta name="classification" content="student application" />
+	<meta name="copyright" content="&copy; 2017 Team Sticky Bits - Delphine Dara, Michael Curnes, and Nan Loyd-Leffingwell" />
+
+	<!-- Allow Zooming on Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+	<!-- CSS RESET -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- BOOTSTRAP CDN for CSS-->
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ 	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- JQUERY CDN -->
+ 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!-- JS -->
+	<script src="" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+    	<div class="panel panel-primary" id="login">
+    		<div class="panel-heading">
+    			<h2 class="panel-title">Medi-Schedule Login</h2>
+    		</div><!-- / .panel-heading -->
+    		<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group" class="login-form">
+						<label for="badgeID" class="col-sm-2 control-label">User ID</label>
+						<div class="col-sm-10">
+							<input type="text" id="badgeID" class="form-control" placeholder="Please enter your 4 digit badge ID number." pattern="[0-9]{4}" required="true">
+						</div><!-- / .col-sm-10 -->
+					</div><!-- / .form-group -->
+					<div class="form-group">
+						<label for="passwordInput" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="passwordInput" placeholder="Please enter a 12 character password." autocomplete="current-password" required="true">
+						</div><!-- / .col-sm-10 -->
+					</div><!-- / .form-group -->
+					<button formaction="schedule.html" type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+				</form><!-- / form -->
+			</div><!-- / .panel-body -->
+		</div><!-- / .panel-primary -->
+	</div><!-- / .container-fluid -->
+
+	<!-- JavaScript -->
+</body>
+</html>

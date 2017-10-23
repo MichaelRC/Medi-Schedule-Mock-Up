@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<!-- GENERAL META -->
+	<title>Nurses - Medi-Schedule</title>
+	<link rel="icon"
+		type="image/png"
+		href="http://medi-schedule.herokuapp.com/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="authors" content="Team Sticky Bits - Delphine Dara, Michael Curnes, and Nan Loyd-Leffingwell" />
+	<meta name="description" content="A full stack application that enables easy shift scheudling for hospitals." />
+	<meta name="classification" content="student application" />
+	<meta name="copyright" content="&copy; 2017 Team Sticky Bits - Delphine Dara, Michael Curnes, and Nan Loyd-Leffingwell" />
+
+	<!-- Allow Zooming on Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+	<!-- CSS RESET -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- BOOTSTRAP CDN for CSS-->
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ 	<!-- Script for Bootstrap Responsive Support-->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- JQUERY CDN -->
+ 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!-- JS -->
+	<script src="" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+        		</button>
+				<a class="navbar-brand" href="schedule.html">Medi-Schedule</a>
+			</div><!-- /.navbar-header -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="patients.html">Patients</a></li>
+					<li class="active"><a href="nurses.html">Nurses<span class="sr-only">(current)</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" class="logout"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      			</ul>
+			</div><!-- /.navbar-collapse -->	
+		</nav>
+	</div><!-- /.container-fluid -->	
+		
+	<div class="content">
+		<div class="container-fluid">
+			<div class="header" id="nurses-header">
+			    <h2>Current Staff</h2>
+			    <h5 class="info">Below is the full current staff. If there are changes to staffing that are not reflected here please contact Staffing Services at <a href = "mailto:staffing_HR@generalhospital.com" class="mailto">staffing_HR@generalhospital.com.</a></h5>
+			</div><!-- / #nurses-header -->
+			<div class="row">
+			    <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        <div class="panel panel-primary img-background">
+						<div class="panel-heading">
+							<h3 class="panel-title">Angstadt, Felix</h3>
+						</div> <!-- / .panel-heading -->
+						<div class="panel-body">
+							<img src="assets/images/felix.jpg" width="150" height="150" class="center-block img-thumbnail" />
+							<p class="shift">Friday, 1st shift</p>
+							<p class="shift">Saturday, 1st shift</p>
+							<p class="shift">Sunday, 1st shift</p>
+						</div><!-- / .panel-body -->
+					</div><!-- / .panel-primary -->
+			    </div><!-- /.col-xs-6 col-sm-4 col-md-3 col-lg-2 -->
+
+			    <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        <div class="panel panel-primary img-background">
+						<div class="panel-heading">
+							<h3 class="panel-title">Breeze, Tameaka</h3>
+						</div> <!-- / .panel-heading -->
+						<div class="panel-body">
+							<img src="assets/images/tameaka.jpg" width="150" height="150" class="center-block img-thumbnail"" />
+							<p class="shift">Monday, 1st shift</p>
+							<p class="shift">Tuesday, 1st shift</p>
+							<p class="shift">Wednesday, 1st shift</p>
+							<p class="shift">Thursday, 1st shift</p>
+						</div><!-- / .panel-body -->
+					</div><!-- / .panel-primary -->
+			    </div><!-- /.col-xs-6 col-sm-4 col-md-3 col-lg-2 -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Chevez, Treena</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/treena.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Friday, 3rd shift</p>
+								<p class="shift">Saturday, 3rd shift</p>
+								<p class="shift">Sunday, 3rd shift</p>
+								</div><!-- / .panel-body -->
+						</div><!-- / .panel-primary -->
+			        </div><!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Hoagland, Alphonse</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/alphonse.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="oncall">On Call</p>
+								<p class="phone">555-555-1234</p>
+								</div><!-- /.panel-body -->
+						</div><!-- /.panel-primary -->
+			        </div><!-- / grid -->
+			</div><!-- /.row-->
+			    
+			<div class="row">
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Hopkins, Miquel</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/miquel.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Monday, 2nd shift</p>
+								<p class="shift">Tuesday, 2nd shift</p>
+								<p class="shift">Wednesday, 2nd shift</p>
+								<p class="shift">Thursday, 2nd shift</p>
+								</div> <!-- / .panel-body -->
+						</div><!-- / .panel-primary -->
+			        </div><!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Love, Ethan</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+									<img src="assets/images/ethan.jpg" width="150" height="150" class="center-block img-thumbnail" />
+									<p class="oncall">On Call</p>
+									<p class="phone">555-555-2345</p>
+								</div><!-- /.panel-body -->
+						</div><!-- /.panel-primary -->
+			        </div><!-- / grid -->
+				
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Malengo, Judi</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/judy.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Monday, 2nd shift</p>
+								<p class="shift">Tuesday, 2nd shift</p>
+								<p class="shift">Wednesday, 2nd shift</p>
+								<p class="shift">Thursday, 2nd shift</p>
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Nord, Carla</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/carla.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="oncall">On Call</p>
+								<p class="phone">555-555-3456</p>
+								</div><!-- /.panel-body -->
+						</div><!-- /.panel-primary -->
+			        </div><!-- / grid -->
+			</div><!-- /.row-->
+
+			<div class="row">
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Rumsey, Danielle</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/danielle.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Friday, 2nd shift</p>
+								<p class="shift">Saturday, 2nd shift</p>
+								<p class="shift">Sunday, 2nd shift</p> 
+								</div><!-- /.panel-body -->
+						</div><!-- /.panel-primary -->
+			        </div><!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Smith, Brigitte</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/brigitte.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Friday, 1st shift</p>
+								<p class="shift">Saturday, 1st shift</p>
+								<p class="shift">Sunday, 1st shift</p> 
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Smith, John</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/john.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Monday, 3rd shift</p>
+								<p class="shift">Tuesday, 3rd shift</p>
+								<p class="shift">Wednesday, 3rd shift</p>
+								<p class="shift">Thursday, 3rd shift</p>
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+
+			        <div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Trapani, Melvin</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/melvin.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Monday, 1st shift</p>
+								<p class="shift">Tuesday, 1st shift</p>
+								<p class="shift">Wednesday, 1st shift</p>
+								<p class="shift">Thursday, 1st shift</p>
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+			</div>
+
+			<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Vacca, Andreas</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/andreas.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Friday, 3rd shift</p>
+								<p class="shift">Saturday, 3rd shift</p>
+								<p class="shift">Sunday, 3rd shift</p> 
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+
+					<div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Vanderploeg, Clement</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/clement.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Friday, 2nd shift</p>
+								<p class="shift">Saturday, 2nd shift</p>
+								<p class="shift">Sunday, 2nd shift</p> 
+								</div> <!-- / .panel-body -->
+						</div> <!-- / .panel-primary -->
+			        </div> <!-- / grid -->
+
+					<div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Vitale, Joannie</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/joannie.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="oncall">On Call</p>
+								<p class="phone">555-555-4567</p>
+								</div><!-- / .panel-body -->
+						</div><!-- / .panel-primary -->
+			        </div><!-- / grid -->
+
+					<div class="col-xs-6 col-sm-6 col-md-3 min-height">
+			        	<div class="panel panel-primary img-background">
+								<div class="panel-heading">
+									<h3 class="panel-title">Washington, Ashley</h3>
+								</div> <!-- / .panel-heading -->
+								<div class="panel-body">
+								<img src="assets/images/ashley.jpg" width="150" height="150" class="center-block img-thumbnail" />
+								<p class="shift">Monday, 3rd shift</p>
+								<p class="shift">Tuesday, 3rd shift</p>
+								<p class="shift">Wednesday, 3rd shift</p>
+								<p class="shift">Thursday, 3rd shift</p>
+								</div><!-- /.panel-body -->
+						</div><!-- /.panel-primary -->
+			        </div><!-- / grid -->
+			</div><!-- /.row-->
+		</div><!-- /.container-fluid -->
+	</div><!-- /.content -->
+
+	<footer>
+		<h4 class="footer-copy">&copy; Medi-Schedule 2017</h4>
+	</footer>
+    
+
+	<!-- JavaScript -->
+</body>
+</html>
